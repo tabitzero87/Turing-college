@@ -1,0 +1,373 @@
+/*通用CSS样式信息*/
+
+* {margin:0; padding:0;border:0;}
+div {margin:0; padding:0;border:0; font-size:14px; }
+ul,ol,li{list-style: none;}
+body,input,textarea{font-family: "Microsoft YaHei";}
+textarea{outline:none;resize:none;}
+
+.clear{
+    clear:both;
+}
+img{width: 100%; height: 100%;}
+/*常规CSS样式信息*/
+.relative{position: relative; top: 0;}
+.w100{width: 100%; height: 100%; display: block;}
+
+/*主区域大小*/
+.main{
+    width:1280px;
+    height: 800px;
+    display: block;
+    margin:0 auto;
+    margin-top:40px;
+    border:1px solid #afafaf;
+}
+
+/*左侧工具条样式*/
+.tools{
+    background-color: #292929;
+    width: 60px;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+.tools .personicon{
+    margin-top:30px;
+    margin-left:15px;
+    display: block;    
+    width:30px;
+    height:30px;
+}
+
+.tools .curmessage{
+    
+    margin-top:30px;
+    margin-left:15px;
+    width: 30px;
+    height: 30px;
+    background-image: url(image/chat.png);
+    background-repeat: no-repeat;
+}
+
+.tools .favorite{
+  
+    margin-top:30px;
+    margin-left:15px;
+    width: 30px;
+    height: 30px;
+    display: block;
+    background-image: url(image/box.png);
+    background-repeat: no-repeat;
+}
+
+.tools .contactlist{
+
+    margin-top:30px;
+    margin-left:15px;
+    width: 30px;
+    height: 30px;
+    display: block;
+    background-image: url(image/userlist.png);
+    background-repeat: no-repeat;
+}
+
+.tools .menu{
+
+    position: absolute;
+    left:15px;
+    bottom:20px;
+    width: 30px;
+    height: 30px;
+    display: block;
+    background-image: url(image/menu.png);
+    background-repeat: no-repeat;
+}
+
+
+/*聊天用户列表*/
+
+.chatlist{
+    background-color: #ece9e8;
+    width: 250px;
+    height: 100%;
+    float: left;
+}
+
+.chatlist .toparea{
+    width: 100%;
+    height: 40px;
+    position: relative;
+}
+
+.chatlist .toparea .search{
+    position: absolute;
+    top:10px;
+    left: 10px;
+    width: 200px;
+    height: 20px;
+    display: block;
+}
+
+.chatlist .toparea .search input{
+    width: 190px;
+    height: 20px;
+    background-color: #e0dede;
+    padding-left:10px;
+    border: none;
+    display: block;
+}
+.chatlist .toparea .search input:focus{
+    background-color: #fff;
+}
+
+.chatlist .toparea .add{
+    position: absolute;
+    top:10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    display: block;
+    background-color: #e0dede;
+}
+
+.chatlist .userlist ul{
+    width:100%;
+    height: 760px;
+    display: block;
+    overflow-y: auto;
+}
+.chatlist .userlist li{
+    width: 100%;
+    height: 60px;
+    display: block;
+    position: relative;
+}
+.chatlist .userlist li:hover{
+    background-color:#8c8c8c;
+}
+
+.chatlist .userlist li .usericon{
+    position: absolute;
+    top:10px;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+.chatlist .userlist li .username{
+    position: absolute;
+    top: 10px;
+    left: 60px;
+    width: 120px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+}
+.chatlist .userlist li .lastmessage{
+    position: absolute;
+    top: 30px;
+    left: 60px;
+    width: 120px;
+    height: 20px;
+    line-height: 20px;
+    font-size:12px;
+    display: block;
+    overflow: hidden;                 
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.chatlist .userlist li .lasttime{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 60px;
+    height: 20px;
+    line-height: 20px;
+    font-size:10px;
+    display: block;
+}
+
+/*聊天信息区域*/
+
+.chatmessage{
+    background-color: #f5f5f5;
+    width: 970px;
+    height: 100%;
+    float: left;
+}
+
+.chatmessage .toparea{
+    position: relative;
+    width: 100%;
+    height:60px;
+    line-height: 60px;
+}
+
+.chatmessage .toparea .chatname{
+    margin-left: 30px;
+    font-size:18px;
+    font-weight: bold;
+}
+
+.chatmessage .toparea .more{
+    position: absolute;
+    top:0;
+    right:10px;
+    width:40px;
+    height: 40px;
+    font-size:18px;
+    font-weight: bold;
+    display: block;
+}
+.chatmessage .messagearea {
+    display: block;
+    width: 100%;
+    height: 590px;
+    overflow-y: auto;
+}
+
+.chatmessage .messagearea .me,.chatmessage .messagearea .them{
+    margin-bottom:10px;
+    display: block;
+    height: auto;
+}
+.chatmessage .messagearea .me .icon{
+    float: right;
+    margin:0 10px;
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+.chatmessage .messagearea .me .message{
+    float:right;
+    padding:10px;
+    width: auto;
+    max-width: 830px;
+    line-height: 20px;
+    border: 1px solid #d2d2d2;
+    border-radius:4px;
+    background-color: #99f55f;
+}
+.chatmessage .messagearea .them .icon{
+    float:left;
+    margin:0 10px;
+    width: 30px;
+    height: 30px;
+}
+.chatmessage .messagearea .them .message{
+    float:left;
+    padding:10px;
+    width: auto;
+    max-width: 830px;
+    line-height: 20px;
+    border: 1px solid #d2d2d2;
+    border-radius:4px;
+    background-color: #fff;
+}
+
+.chatmessage .chattools{
+    position: relative;
+    display: block;
+    width: 100%;
+    padding-top:10px;
+    height: 20px;
+    background-color: #fff;
+}
+
+.chatmessage .chattools .face,
+.chatmessage .chattools .folder,
+.chatmessage .chattools .cut,
+.chatmessage .chattools .history,
+.chatmessage .chattools .video{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-left:20px;
+}
+.chatmessage .chattools .face{
+    background-image: url("image/face.png");
+    background-repeat: no-repeat;
+}
+.chatmessage .chattools .folder{
+    background-image: url("image/folder.png");
+    background-repeat: no-repeat;
+}
+.chatmessage .chattools .cut{
+    background-image: url("image/cut.png");
+    background-repeat: no-repeat;
+}
+.chatmessage .chattools .history{
+    background-image: url("image/history.png");
+    background-repeat: no-repeat;
+}
+.chatmessage .chattools .video{
+    background-image: url("image/video.png");
+    background-repeat: no-repeat;
+}
+
+.chatmessage .inputarea{
+    background-color: #fff;
+}
+
+.chatmessage .inputarea textarea{
+    width: 100%;
+    padding:10px 0;
+    font-size:16px;
+    line-height: 20px;
+    background-color: #fff;
+}
+
+.chatmessage .inputarea .send{
+    width: 100%;
+    text-align: right;
+}
+.chatmessage .inputarea .send input{
+    width: 80px;
+    height: 25px;
+    margin:0 10px 10px 0;
+}
+
+
+@media screen and (min-width:1080px) and (max-width:1280px)
+{
+    .main{width: 1080px; margin-top:30px}
+    .chatmessage{width: 770px;}
+    .chatmessage .messagearea .me .message{max-width: 630px;}
+    .chatmessage .messagearea .them .message{max-width: 630px;}
+}
+
+@media screen and (min-width:880px) and (max-width:1080px)
+{
+    .main{width: 880px; margin-top:20px}
+    .chatmessage{width: 570px;}
+    .chatmessage .messagearea .me .message{max-width: 430px;}
+    .chatmessage .messagearea .them .message{max-width: 430px;}
+}
+
+@media screen and  (max-width:880px)
+{
+    .main{width: 680px; margin-top:10px}
+    .chatmessage{width: 370px;}
+    .chatmessage .messagearea .me .message{max-width: 230px;}
+    .chatmessage .messagearea .them .message{max-width: 230px;}
+}
+
+@media screen and (min-height:600px) and (max-height:800px)
+{
+    .main{height: 600px;}
+    .chatlist .userlist ul{height: 560px;}
+    .chatmessage .messagearea{height: 390px;}
+}
+
+@media screen and (min-height:400px) and (max-height:600px)
+{
+    .main{height: 400px;}
+    .chatlist .userlist ul{height: 360px;}
+    .chatmessage .messagearea{height: 190px;}
+}

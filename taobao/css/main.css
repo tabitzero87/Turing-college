@@ -1,0 +1,233 @@
+
+* {margin:0; padding:0;border:0;}
+div {margin:0; padding:0;border:0; font-size:14px; }
+ul,ol,li{list-style: none;}
+body,input,textarea{font-family: "Microsoft YaHei";}
+textarea{outline:none;resize:none;}
+
+img{width: 100%; height: 100%;}
+
+.clear{clear:both;}
+.hidden{display: none;}
+
+.logo{
+    width: 100%;
+    height: 110px;
+    display: block;
+    background-image: url("../image/logo.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.nav{
+    width: 1280px;
+    height: 40px;
+    line-height: 40px;
+    font-size:16px;
+    margin:0 auto;
+    display: block;
+}
+
+.nav .alltype{
+    width: 290px;
+    height: 100%;
+    display: inline-block;
+    padding:0 5px;
+}
+.nav .onetype{
+    height: 100%;
+    display: inline-block;
+    padding:0 5px;
+}
+.nav .alltype:hover,
+.nav .onetype:hover{
+    background-color: #ff0;
+}
+
+.ad_fullscreen{
+    
+    width: 100%;
+    height: 460px;
+    display: block;
+    background-image: url("../image/ad1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.ad_fullscreen .typemenu{
+    width: 1280px;
+    height: 100%;
+    margin:0 auto;
+    display: block;
+}
+
+.ad_fullscreen .typemenu ul{
+    width: 300px;
+    height: 430px;
+    padding-top:30px;
+    background:rgba(0,0,0,0.5); 
+    display: block;
+}
+
+
+.ad_fullscreen .typemenu li{
+    height: 40px;
+    line-height: 40px;
+    padding-left:80px;
+    font-size:16px;
+    color: #fff;
+}
+
+.ad_fullscreen .typemenu span{
+    float: right;
+    margin-right: 40px;
+    font-weight: bold;
+}
+
+
+.mainshop{
+    width: 1280px;
+    height: auto;
+    display: block;
+    margin:0 auto;
+}
+
+.today_ad{
+    width: 100%;
+    height: 70px;
+    display: block;
+    background-image: url("../image/today.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.today_area{
+    
+    width: 100%;
+    padding-top:5px;
+    height: 670px;
+    display: block;
+    background-color: #b1b1b1;
+}
+
+.today_area .item{
+    width: 251px;
+    height: 330px;
+    margin-left:4px;
+    margin-bottom:5px;
+    float: left;
+    position: relative;
+    background-color: #efefef;
+}
+
+.today_area .item .item_icon{
+    width:100%;
+    height: 230px;
+    background-color: #fff;
+    text-align: center;
+    display: block;
+}
+.today_area .item .item_icon img{
+    width:230px;
+    height: 230px;
+}
+.today_area .item .item_info{
+    padding: 10px;
+}
+.today_area .item .item_info h3,.today_area .item .item_info p{
+    height: 20px;
+    line-height: 20px;
+}
+
+.today_area .item .item_info h3{
+    font-size:18px;
+    font-weight: bold;
+}
+
+.today_area .item .item_info .point{
+    color:#f00;
+}
+.today_area .item .item_info .oldprice{
+    color:#ccc;
+    text-decoration: line-through;
+}
+.today_area .item .item_info .newprice{
+    color:#ff7800;
+    font-size:18px;
+    font-weight: bold;
+}
+
+.today_area .item .item_go{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: 92px;
+    height: 34px;
+    background-image: url("../image/go.png");
+    background-repeat: no-repeat;
+}
+
+
+.type_shop{
+    width: 100%;
+    margin-top:20px;
+    height: 600px;
+    display: block;
+}
+
+.type_shop .leftarea{
+    float: left;
+    width: 225px;
+    height: 599px;
+    display: block;
+    background-image: url("../image/type.jpg");
+    background-repeat: no-repeat;
+}
+.type_shop .rightarea{
+    float: right;
+    width: 1050px;
+    height: 100%;
+}
+
+.type_shop .rightarea .item{
+    float: left;
+    width: 260px;
+    height: 299px;
+    border: 1px solid #ddd;
+    display: block;
+}
+
+.type_shop .rightarea .item .item_icon{
+    width: 210px;
+    height: 210px;
+    display: block;
+    margin:0 auto;
+}
+
+
+.type_shop .rightarea .item .item_info p{
+    width: 100%;
+    display: block;
+    line-height: 40px;
+    text-overflow : clip; 
+    white-space : nowrap; 
+    overflow : hidden; 
+}
+.type_shop .rightarea .item .item_info .info_title{
+    font-size:20px;
+}
+
+.type_shop .rightarea .item .item_info .price{
+    font-size:20px;
+    font-weight: bold;
+    color: #f00;
+}
+
+.foot{
+    margin-top:10px;
+    width: 100%;
+    height: 50px;
+    border-top:1px solid #000;
+    text-align: center;
+}
